@@ -1,6 +1,7 @@
 ﻿using SpeechLib;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 namespace spitalkDLL
@@ -18,8 +19,6 @@ namespace spitalkDLL
 
         public SapiTalk()
         {
-            int idx = 0;
-
             try
             {
                 sapi = new SpVoice();
@@ -27,7 +26,6 @@ namespace spitalkDLL
                 Dictionary<string, SpObjectToken> TokerPool = new Dictionary<string, SpObjectToken>();
 
                 // See https://qiita.com/7shi/items/7781516d6746e29c03b4
-
                 sapiCat.SetId(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Voices", false);
 
                 foreach (SpObjectToken token in sapiCat.EnumerateTokens())
@@ -46,11 +44,7 @@ namespace spitalkDLL
                     }
                 }
 
-                foreach (var item in TokerPool)
-                {
-                    SpeakerList.Add(idx, item.Value);
-                    idx++;
-                }
+                SpeakerList = TokerPool.Select((val, idx) => new { Key = idx, Value = val.Value }).ToDictionary(s => s.Key, s => s.Value);
 
                 ScanOutputDevices();
             }

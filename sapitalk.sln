@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spitalkDLL", "spitalkDLL\sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCode", "SampleCode\SampleCode.csproj", "{08765EF1-AA6E-4286-A0FD-55E5CBC86492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechPlatformSample", "SpeechPlatformSample\SpeechPlatformSample.csproj", "{1E0E4972-BF45-4B3B-8949-F42955B20DE0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{08765EF1-AA6E-4286-A0FD-55E5CBC86492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08765EF1-AA6E-4286-A0FD-55E5CBC86492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08765EF1-AA6E-4286-A0FD-55E5CBC86492}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E0E4972-BF45-4B3B-8949-F42955B20DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E0E4972-BF45-4B3B-8949-F42955B20DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E0E4972-BF45-4B3B-8949-F42955B20DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E0E4972-BF45-4B3B-8949-F42955B20DE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
