@@ -3,7 +3,7 @@
 私が公開している sapitalk のコードを公開。
 
 ## sapitalk
-私が[SAPIでテキストを読み上げるコマンド](https://hgotoh.jp/wiki/doku.php/documents/tools/tools-202)で公開しているツールのコード。
+私が[SAPIでテキストを読み上げるコマンド](https://wiki.hgotoh.jp/documents/tools/speechsynthesis/tools-202)で公開しているツールのコード。
 
 ## spitalkDLL
 sapitalkをDLL化したコード。
